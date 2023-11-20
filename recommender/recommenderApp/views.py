@@ -10,7 +10,7 @@ from tensorflow.keras.models import load_model
 def home(request):
     context = {'result': 'none'}
     if request.method == 'POST':
-        model = load_model('./static/MPox_Recommender.keras')
+        model = load_model('./recommenderApp/MPox_Recommender.keras')
         responses = request.POST.dict()
 
         answers = [
